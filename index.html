@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Leasing Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="container-one">
+            <h1 class="title">Car Leasing Calculator</h1>
+            <form id="leasingForm">
+                <div class="form-row-one">
+                    <!-- <div class="car-type-container"> -->   
+                        <label for="carTypeLabel">Car Type:</label>
+                        <select title="carTypeSelecect" id="carTypeDropdown" onchange="interestCalculate(this)">
+                            <option value="new">Brand New</option>
+                            <option value="used">Used</option>
+                        </select>
+                    <!-- </div> -->
+
+                    <label for="leasePeriod">Lease Period (months):</label>
+                    <select id="leasePeriod"  onchange="leaseCalculate()" >
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                        <option value="36">36</option>
+                        <option value="48">48</option>
+                        <option value="60">60</option>
+                    </select>
+                </div>
+
+                <label for="carValue">Car Value (€10,000 - €200,000):</label>
+                <input type="text" onkeydown="return false" value="10000" id="carValue" step="10000" min="10000" max="200000">
+                <input type="range" id="carValueRange" step="100" min="10000" max="200000">
+
+                <label for="downPayment">Down Payment (10% - 50%):</label>
+                <input type="text" onkeydown="return false" id="downPaymentText" min="10" max="50" step="5">
+                <input type="range" id="downPaymentRange" min="10" max="50" step="5">
+            </form>
+        </div>
+
+        <div class="container-two">
+            <h2>Leasing Details</h2>
+            <p>Total Leasing Cost: <span id="leasingCost"></span></p>
+            <p>Down Payment: <span id="downPaymentValue"></span></p>
+            <p>Monthly Installment: <span id="monthlyInstallment"></span></p>
+            <p>Interest Rate: <span id="interestRate"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
