@@ -2,9 +2,14 @@
 
 TASK 1: Car-Leasing-Calculator
 How did I approach the problem?
+
 Understanding the Problem: I started by reading the problem carefully to understand the requirements and constraints.
+
 Visualizing the Solution: I then visualized the solution in my head, considering various approaches to solving the problem.
-Selecting the Best Approach: I selected the most efficient approach and began writing the code. During the process, I encountered small issues, but I managed to fix them (who runs code successfully on the first attempt, right?).
+
+Selecting the Best Approach: I selected the most efficient approach and began writing the code. 
+
+During the process, I encountered small issues, but I managed to fix them (who runs code successfully on the first attempt, right?).
 
 How does the solution work?
 
